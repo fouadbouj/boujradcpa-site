@@ -5,7 +5,7 @@ MAPS='https://www.google.com/maps/search/?api=1&query=672+Boulevard+des+Laurenti
 T={
 'fr':dict(lang='fr-CA',title='Boujrad CPA Inc. · Comptables à Laval',desc="Cabinet de comptables professionnels agréés à Laval : tenue de livres, états financiers, impôts des sociétés et des particuliers, TPS/TVQ.",
  other='/en/',otherlbl='EN',otherfull='English',home='/',
- nav=['Services','Approche','Clientèle','Contact'],members='Espace membres',
+ nav=['Services','Approche','Clientèle','Contact'],members='Intranet',
  h1='Des chiffres clairs pour des décisions sereines.',
  lead="Boujrad CPA est un cabinet de comptables professionnels agréés établi à Laval. Nous tenons vos livres, préparons vos états financiers et vos déclarations, et vous expliquons vos chiffres simplement.",
  cta1='Nous écrire',cta2='Voir nos services',
@@ -30,7 +30,7 @@ T={
  alt="Illustration d'un état financier et d'un graphique en hausse"),
 'en':dict(lang='en-CA',title='Boujrad CPA Inc. · Accountants in Laval',desc='Chartered professional accountants in Laval: bookkeeping, financial statements, corporate and personal tax, GST/QST.',
  other='/',otherlbl='FR',otherfull='Français',home='/en/',
- nav=['Services','Approach','Clients','Contact'],members='Member access',
+ nav=['Services','Approach','Clients','Contact'],members='Intranet',
  h1='Clear numbers for confident decisions.',
  lead='Boujrad CPA is a firm of chartered professional accountants based in Laval. We keep your books, prepare your financial statements and tax returns, and explain your numbers in plain terms.',
  cta1='Write to us',cta2='See our services',

@@ -96,5 +96,5 @@ for p in OUT.glob('**/*'):
 (OUT / 'merci.html').write_text(thanks('fr'), encoding='utf-8')
 (OUT / 'en' / 'merci.html').write_text(thanks('en'), encoding='utf-8')
 (OUT / 'favicon.svg').write_text(logo(64).replace('width="64" height="64" ', ''), encoding='utf-8')
-(OUT / '_redirects').write_text('/espace-membres  ' + APP + '  302\n/members  ' + APP + '  302\n', encoding='utf-8')
+(OUT / '_redirects').write_text('/intranet  ' + APP + '  302\n/espace-membres  ' + APP + '  302\n/members  ' + APP + '  302\n', encoding='utf-8')
 print('ok')
