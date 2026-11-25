@@ -3,22 +3,22 @@ HERE = pathlib.Path(__file__).resolve().parent
 exec(open(HERE / 'data.py', encoding='utf-8').read())
 
 EXTRA = {
- 'fr': dict(rot=['des chiffres clairs.', 'des impôts maîtrisés.', 'une croissance accompagnée.'], pre='avec nous,',
-   vT='notre façon de travailler',
+ 'fr': dict(rot=['Des chiffres clairs.', 'Des impôts maîtrisés.', 'Une croissance accompagnée.'], pre='Avec nous,',
+   vT='Notre façon de travailler',
    vals=[('Clarté', 'Des états financiers et des explications que vous comprenez, sans jargon.'),
          ('Rigueur', "Chaque dossier est révisé et concilié avant d'être remis."),
          ('Proximité', 'Un interlocuteur qui connaît votre dossier et répond rapidement.'),
          ('Efficacité', 'Des outils numériques sécurisés pour moins de papier et plus de temps pour vous.')],
-   mq=['tenue de livres', 'états financiers', 'impôts des sociétés', 'impôts des particuliers', 'TPS / TVQ', 'paie', "démarrage d'entreprise", 'planification fiscale'],
-   talk='parlons de vos projets', scroll='Défiler'),
- 'en': dict(rot=['clear numbers.', 'taxes under control.', 'growth with support.'], pre='with us,',
-   vT='how we work',
+   mq=['Tenue de livres', 'États financiers', 'Impôts des sociétés', 'Impôts des particuliers', 'TPS / TVQ', 'Paie', "Démarrage d'entreprise", 'Planification fiscale'],
+   talk='Parlons de vos projets', scroll='Défiler'),
+ 'en': dict(rot=['Clear numbers.', 'Taxes under control.', 'Growth with support.'], pre='With us,',
+   vT='How we work',
    vals=[('Clarity', 'Financial statements and explanations you understand, without jargon.'),
          ('Rigour', 'Every file is reviewed and reconciled before it is delivered.'),
          ('Close at hand', 'One contact who knows your file and replies quickly.'),
          ('Efficiency', 'Secure digital tools for less paper and more time for you.')],
-   mq=['bookkeeping', 'financial statements', 'corporate tax', 'personal tax', 'GST / QST', 'payroll', 'starting a business', 'tax planning'],
-   talk="let's talk about your projects", scroll='Scroll')}
+   mq=['Bookkeeping', 'Financial statements', 'Corporate tax', 'Personal tax', 'GST / QST', 'Payroll', 'Starting a business', 'Tax planning'],
+   talk="Let's talk about your projects", scroll='Scroll')}
 
 CSS = open(HERE / 'site2.css', encoding='utf-8').read()
 JS = open(HERE / 'site2.js', encoding='utf-8').read()
