@@ -22,3 +22,9 @@ if (w && !R) {
   }, 3200);
 }
 }
+
+/* menu Connexion déroulant */
+(()=>{const b=document.getElementById('cxB'),p=document.getElementById('cxP');if(!b||!p)return;
+  const set=o=>{p.classList.toggle('open',o);b.setAttribute('aria-expanded',o);document.querySelector('header')?.classList.toggle('cxo',o)};
+  b.addEventListener('click',e=>{e.stopPropagation();set(!p.classList.contains('open'))});
+  document.addEventListener('click',e=>{if(!p.contains(e.target))set(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){set(false);b.focus()}})})();

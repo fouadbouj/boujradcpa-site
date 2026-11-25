@@ -49,7 +49,11 @@ def page(L):
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style>{CSS}</style></head><body>
 <header><div class="wrap nav"><a class="brand" href="{d['home']}">{wordmark()}</a><nav class="links" aria-label="Navigation">{nav}</nav>
-<a class="lang" href="{d['other']}" hreflang="{'en' if L == 'fr' else 'fr'}" title="{d['otherfull']}">{d['otherlbl']}</a><a class="btn mint" href="{APP}">{d['members']}</a></div></header>
+<a class="lang" href="{d['other']}" hreflang="{'en' if L == 'fr' else 'fr'}" title="{d['otherfull']}">{d['otherlbl']}</a><button class="btn mint cxb" id="cxB" aria-expanded="false" aria-controls="cxP">{d['login']}<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
+<div class="cxp" id="cxP" role="region" aria-label="{d['login']}"><div class="wrap cxg">
+<div class="cxc"><p class="cxk">{d['cx_it']}</p><p class="cxd">{d['cx_id']}</p><div class="cxl"><a href="{APP}/">{d['cx_c1']} <span>→</span></a><a href="{APP}/centre.html">{d['cx_c2']} <span>→</span></a></div></div>
+<div class="cxc cxm"><p class="cxk">{d['cx_pt']}</p><p class="cxd">{d['cx_pd']}</p><a class="btn deep" href="{APP}/portail.html">{d['cx_pb']}</a><p class="cxn">{d['cx_pn']}</p></div>
+</div></div></header>
 <main>
 <section class="hero"><div class="cols" aria-hidden="true">{cols}</div><div class="veil"></div>
 <div class="wrap in"><p class="pre">{x['pre']}</p><h1><span data-w='{words}'>{x['rot'][0]}</span></h1><p>{d['lead']}</p>
@@ -78,7 +82,7 @@ def page(L):
 </div></section></main>
 <footer><div class="wrap"><div><a class="brand" href="{d['home']}">{wordmark(24)}</a><p style="margin:12px 0 0">{', '.join(d['adr'][:2])}</p></div>
 <div><p style="margin:0;color:#fff">{d['hrT']}</p><p style="margin:4px 0 0">{d['hr'][0][0]} : {d['hr'][0][1]} · {d['hr'][1][0]} : {d['hr'][1][1]}</p></div>
-<div><p style="margin:0"><a href="{APP}">{d['members']}</a> · <a href="{d['other']}">{d['otherfull']}</a></p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc. {d['foot']}</p></div></div></footer>
+<div><p style="margin:0"><a href="{APP}/portail.html">{d['cx_pt']}</a> · <a href="{APP}">{d['members']}</a> · <a href="{d['other']}">{d['otherfull']}</a></p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc. {d['foot']}</p></div></div></footer>
 <script>{JS}</script></body></html>'''
 
 def thanks(L):
@@ -96,5 +100,5 @@ for p in OUT.glob('**/*'):
 (OUT / 'merci.html').write_text(thanks('fr'), encoding='utf-8')
 (OUT / 'en' / 'merci.html').write_text(thanks('en'), encoding='utf-8')
 (OUT / 'favicon.svg').write_text(logo(64).replace('width="64" height="64" ', ''), encoding='utf-8')
-(OUT / '_redirects').write_text('/intranet  ' + APP + '  302\n/espace-membres  ' + APP + '  302\n/members  ' + APP + '  302\n', encoding='utf-8')
+(OUT / '_redirects').write_text('/intranet  ' + APP + '  302\n/espace-membres  ' + APP + '  302\n/members  ' + APP + '  302\n/portail  ' + APP + '/portail.html  302\n/portal  ' + APP + '/portail.html  302\n/centre  ' + APP + '/centre.html  302\n', encoding='utf-8')
 print('ok')
