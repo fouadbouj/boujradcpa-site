@@ -1,6 +1,6 @@
 import pathlib, json
 OUT=HERE/'site'; (OUT/'en').mkdir(parents=True,exist_ok=True)
-APP='https://cool-fox-579b3f.netlify.app'
+APP='https://app.boujradcpa.com'
 MAPS='https://www.google.com/maps/search/?api=1&query=672+Boulevard+des+Laurentides+Laval+QC+H7G+2V9'
 T={
 'fr':dict(lang='fr-CA',title='Boujrad CPA Inc. · Comptables à Laval',desc="Cabinet de comptables professionnels agréés à Laval : tenue de livres, états financiers, impôts des sociétés et des particuliers, TPS/TVQ.",
