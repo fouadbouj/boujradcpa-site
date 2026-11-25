@@ -86,7 +86,7 @@ def thanks(L):
     return f'''<!DOCTYPE html><html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{d['thanksT']}</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
 <header class="solid"><div class="wrap nav"><a class="brand" href="{d['home']}">{wordmark()}</a><a class="btn deep" href="{APP}">{d['members']}</a></div></header>
-<main class="thanks"><div class="wrap"><h1>{d['thanksT']}</h1><p style="color:#cfdcd6">{d['thanksL']}</p><p><a class="btn mint" href="{d['home']}">{d['back']}</a></p></div></main></body></html>'''
+<main class="thanks"><div class="wrap"><h1>{d['thanksT']}</h1><p style="color:#cdd6e3">{d['thanksL']}</p><p><a class="btn mint" href="{d['home']}">{d['back']}</a></p></div></main></body></html>'''
 
 for p in OUT.glob('**/*'):
     if p.is_file(): p.unlink()
