@@ -108,6 +108,56 @@ GUIDES = [
 <div class="src"><strong>Sources officielles</strong> · <a href="https://www.canada.ca/fr/agence-revenu/services/prestations-enfants-familles/allocation-canadienne-enfants/comment-demande.html" rel="noopener">ARC : comment demander l’ACE</a> · <a href="https://www.canada.ca/fr/agence-revenu/services/prestations-enfants-familles/documents-justificatifs.html" rel="noopener">ARC : documents justificatifs</a> · <a href="https://www.retraitequebec.gouv.qc.ca/fr/formulaires/formulaires-concernant-allocation-famille" rel="noopener">Retraite Québec : formulaires de l’Allocation famille</a></div>'''),
 ]
 
+CHRONIQUES = [
+ dict(slug='budget-federal-2026', date='2026-11-25', dlong='25 novembre 2026', cat='Nouveautés fiscales', titre='Budget fédéral du 5 novembre 2026 : ce qui pourrait changer pour vous',
+  resume='Date limite du 15 mai, acomptes provisionnels allégés, crédit pour aidants remboursable, nouvelle exemption pour les entrepreneurs : les mesures à surveiller.',
+  corps='''
+<p class="lede">Le budget fédéral déposé le 5 novembre 2026 propose plusieurs changements concrets pour les particuliers, les travailleurs autonomes et les propriétaires d’entreprise. Attention : ce sont des propositions. Elles doivent encore être adoptées, et Québec doit annoncer s’il s’harmonise pour sa propre déclaration.</p>
+<h2>Pour les particuliers</h2><ul>
+<li><strong>Une seule date limite : le 15 mai.</strong> À partir de l’année d’imposition 2027, tous les particuliers, y compris les travailleurs autonomes et leurs conjoints, auraient jusqu’au 15 mai pour produire leur déclaration fédérale et payer leur solde.</li>
+<li><strong>Moins de gens obligés de verser des acomptes provisionnels.</strong> Au Québec, le seuil fédéral passerait de 1 800 $ à 4 500 $ d’impôt à payer, à compter de l’année 2028. Les travailleurs autonomes pourraient aussi faire un seul versement des deux tiers de leur impôt estimé, au plus tard le 31 décembre, au lieu de quatre versements.</li>
+<li><strong>Crédit canadien pour aidant naturel remboursable</strong> à compter de 2027 : il profiterait aussi aux aidants qui ont peu ou pas d’impôt à payer.</li>
+<li><strong>Biens à l’étranger (T1135)</strong> : le seuil de déclaration passerait de 100 000 $ à 200 000 $ pour les années qui se terminent après 2026.</li>
+<li><strong>Avis d’opposition</strong> : le délai pour contester une cotisation serait resserré et les demandes de prolongation, éliminées. Raison de plus de nous transmettre vos avis de cotisation dès leur réception.</li>
+<li><strong>Frais médicaux</strong> : le crédit serait simplifié, avec moins de pièces justificatives pour certaines dépenses, et des montants fixes optionnels seraient offerts pour certains frais (déménagement, adoption, accessibilité domiciliaire).</li></ul>
+<h2>Pour les entreprises</h2><ul>
+<li><strong>Incitatif à la croissance canadienne</strong> : une nouvelle exemption pouvant atteindre 15 millions de dollars de gains en capital par particulier et par entreprise, sur des actions admissibles émises à compter du jour du budget.</li>
+<li><strong>Acomptes des sociétés</strong> : le seuil passerait de 3 000 $ à 7 500 $ pour les années commençant à partir de 2028.</li>
+<li><strong>Transferts entre générations</strong> : le roulement des fermes et des entreprises de pêche s’étendrait aux neveux, nièces et petits-neveux à compter de 2027.</li></ul>
+<div class="tip"><strong>Ce que nous vous conseillons.</strong> Rien à faire pour l’instant : nous suivrons l’adoption de ces mesures et la position de Québec, et nous en tiendrons compte dans vos dossiers. Si vous êtes travailleur autonome ou si vous songez à vendre ou à transférer votre entreprise, parlons-en dans votre prochaine rencontre.</div>
+<div class="src"><strong>Sources</strong> · <a href="https://www.rbcwealthmanagement.com/fr-ca/insights/federal-budget-2026-an-overview-of-key-measures-that-may-impact-you" rel="noopener">RBC Gestion de patrimoine : aperçu des mesures du budget fédéral 2026</a> · <a href="https://www.budget.canada.ca/" rel="noopener">Budget du gouvernement du Canada</a></div>'''),
+
+ dict(slug='fin-annee-2026', date='2026-11-24', dlong='24 novembre 2026', cat='Conseils', titre='Avant le 31 décembre : 8 gestes pour payer moins d’impôt',
+  resume='CELI, REER, pertes en capital, dons, dépenses à payer avant la fin de l’année : la liste à vérifier d’ici le 31 décembre 2026.',
+  corps='''
+<p class="lede">Une bonne partie des économies d’impôt se jouent avant le 31 décembre : après, il est souvent trop tard. Voici les points à vérifier pour 2026.</p>
+<ol class="gsteps">
+<li><b>Retirez de votre CELI avant le 31 décembre si vous prévoyez le faire</b><p>Le plafond est de 7 000 $ pour 2026. Un montant retiré est ajouté à vos droits de cotisation seulement le 1er janvier suivant : un retrait fait en décembre vous redonne donc ces droits dès janvier, alors qu’un retrait fait en janvier vous oblige à attendre une année de plus. Et attention : remettre en 2026 un montant retiré en 2026 peut créer une cotisation excédentaire pénalisée.</p></li>
+<li><b>Préparez votre cotisation REER</b><p>Le plafond pour 2026 est de 33 810 $ (18 % du revenu gagné de l’année précédente, selon vos droits), et vous avez jusqu’au 1er mars 2027 pour cotiser. Le plafond monte à 35 390 $ pour 2027.</p></li>
+<li><b>Pensez au CELIAPP si vous achetez votre première propriété</b><p>Jusqu’à 8 000 $ par année, déductibles comme un REER et retirés sans impôt pour l’achat d’une première habitation.</p></li>
+<li><b>Réalisez vos pertes en capital</b><p>Vendre des placements qui ont perdu de la valeur avant la fin de l’année peut réduire l’impôt sur vos gains de l’année. Attention aux règles sur les pertes apparentes si vous rachetez le même titre trop vite.</p></li>
+<li><b>Faites vos dons avant le 31 décembre</b><p>C’est la date du reçu qui compte. Au-delà des premiers 200 $, le crédit est beaucoup plus élevé.</p></li>
+<li><b>Payez avant la fin de l’année les frais qui donnent droit à une déduction ou à un crédit</b><p>Frais de garde, frais médicaux, frais de scolarité, cotisations professionnelles : c’est l’année du paiement qui compte. Au Québec, les frais de placement ne sont déductibles que jusqu’à concurrence de vos revenus de placement de l’année.</p></li>
+<li><b>Prêt au conjoint à taux prescrit</b><p>Si vous en avez un, les intérêts de 2026 doivent être payés au plus tard le 30 janvier 2027, sinon le fractionnement de revenu tombe.</p></li>
+<li><b>Placez les allocations pour enfants dans un compte à leur nom</b><p>Les revenus générés par l’allocation canadienne pour enfants et l’Allocation famille déposées dans un compte au nom de l’enfant sont imposés à l’enfant, et non aux parents.</p></li>
+</ol>
+<div class="tip"><strong>Propriétaires d’entreprise</strong> : salaire ou dividendes, achat d’équipement avant la fin de l’exercice, bonis à verser : ces choix se planifient avant la fin de votre exercice. Écrivez-nous dans le portail pour en discuter.</div>
+<div class="src"><strong>Sources</strong> · <a href="https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/compte-epargne-libre-impot/cotiser/calculer-droits.html" rel="noopener">ARC : droits de cotisation au CELI</a> · <a href="https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html" rel="noopener">ARC : plafonds REER et CELI</a> · <a href="https://www.crowe.com/ca/crowebgk/fr-ca/publications/yetp-2025-2026" rel="noopener">Crowe BGK : planification fiscale de fin d’année</a></div>'''),
+
+ dict(slug='changements-2026', date='2026-11-20', dlong='20 novembre 2026', cat='Nouveautés fiscales', titre='Impôt 2026 : les changements qui touchent votre déclaration',
+  resume='Taux fédéral de 14 %, indexation de 2,05 % au Québec et cotisations au RRQ et au RQAP réduites : ce que vous verrez dans votre déclaration 2026.',
+  corps='''
+<p class="lede">Votre déclaration de revenus 2026, que vous produirez au printemps 2027, reflétera plusieurs changements entrés en vigueur le 1er janvier 2026.</p>
+<h2>Au fédéral : le premier taux passe à 14 %</h2>
+<p>Le taux qui s’applique à la première tranche de revenu imposable, qui était de 15 %, a été abaissé à 14 % le 1er juillet 2025 (soit 14,5 % pour l’ensemble de 2025) et s’applique à 14 % pour toute l’année 2026. Comme la plupart des crédits d’impôt non remboursables sont calculés au même taux, leur valeur baisse aussi légèrement.</p>
+<h2>Au Québec : indexation de 2,05 %</h2>
+<p>Les seuils des tranches d’imposition et la plupart des crédits sont indexés de 2,05 % en 2026. Les taux eux-mêmes ne changent pas : le premier taux de 14 % s’applique jusqu’à 54 345 $ de revenu imposable.</p>
+<h2>Cotisations réduites au RRQ et au RQAP</h2>
+<p>Québec a réduit les taux de cotisation au Régime de rentes du Québec et au Régime québécois d’assurance parentale à compter de 2026. L’économie maximale est d’environ 137 $ pour un salarié et 259 $ pour un travailleur autonome.</p>
+<div class="tip"><strong>Employeurs</strong> : ces nouveaux taux s’appliquent à vos paies depuis janvier 2026. Si vous faites votre paie vous-même, vérifiez que votre logiciel a été mis à jour.</div>
+<div class="src"><strong>Sources</strong> · <a href="https://www.canada.ca/fr/ministere-finances/nouvelles/2025/05/une-reduction-dimpot-qui-profitera-a-la-classe-moyenne.html" rel="noopener">Finances Canada : réduction du premier taux</a> · <a href="https://www.revenuquebec.ca/fr/entreprises/retenues-a-la-source-et-cotisations-de-lemployeur/trousse-employeur/principaux-changements-pour-2026-trousse-employeur/" rel="noopener">Revenu Québec : principaux changements pour 2026</a> · <a href="https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/maj/documents/COMFR_MAJ_20251125.pdf" rel="noopener">Finances Québec : mise à jour de l’automne 2025</a></div>'''),
+]
+
 def guides(OUT, CSS, wordmark, APP):
     d = OUT / 'guides'
     (d / 'img').mkdir(parents=True, exist_ok=True)
@@ -119,12 +169,18 @@ def guides(OUT, CSS, wordmark, APP):
 <title>{H.escape(title)} · Boujrad CPA Inc.</title><meta name="description" content="{H.escape(desc)}"><link rel="canonical" href="https://boujradcpa.com{canon}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:title" content="{H.escape(title)}"><meta property="og:description" content="{H.escape(desc)}">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><style>{CSS}{GCSS}</style></head><body>
-<header class="solid"><div class="wrap nav"><a class="brand" href="/">{wordmark()}</a><nav class="links" aria-label="Navigation"><a href="/#services">Services</a><a href="/guides/">Guides</a><a href="/#contact">Contact</a></nav><a class="btn deep" href="{APP}/portail.html">Portail client</a></div></header>
+<header class="solid"><div class="wrap nav"><a class="brand" href="/">{wordmark()}</a><nav class="links" aria-label="Navigation"><a href="/#services">Services</a><a href="/guides/">Chroniques et guides</a><a href="/#contact">Contact</a></nav><a class="btn deep" href="{APP}/portail.html">Portail client</a></div></header>
 <main class="gmain"><div class="wrap">{body}</div></main>
 <footer><div class="wrap"><div><a class="brand" href="/">{wordmark(24)}</a></div><div><p style="margin:0">Ces guides sont fournis à titre informatif. Les étapes des sites gouvernementaux peuvent changer : en cas de doute, fiez-vous aux sources officielles indiquées.</p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc.</p></div></div></footer></body></html>'''
-    cards = ''.join(f'<a class="gcard" href="/guides/{g["slug"]}.html"><small>{g["cat"]}</small><h2>{g["titre"]}</h2><p>{g["resume"]}</p></a>' for g in GUIDES)
-    (d / 'index.html').write_text(shell('Guides pratiques', 'Guides pas à pas : portail client, comptes de l’ARC et de Revenu Québec, allocations et plus.',
-        f'<h1>Guides pratiques</h1><p class="lede">Des marches à suivre simples pour vos démarches en ligne : notre portail client, vos comptes auprès des gouvernements et vos prestations.</p><div class="gcards">{cards}</div>', '/guides/'), encoding='utf-8')
+    card = lambda g, extra='': f'<a class="gcard" href="/guides/{g["slug"]}.html"><small>{g["cat"]}{extra}</small><h2>{g["titre"]}</h2><p>{g["resume"]}</p></a>'
+    CH = sorted(CHRONIQUES, key=lambda c: c['date'], reverse=True)
+    cc = ''.join(card(c, ' · ' + c['dlong']) for c in CH)
+    gc = ''.join(card(g) for g in GUIDES)
+    (d / 'index.html').write_text(shell('Chroniques et guides', 'Nouveautés fiscales, conseils et guides pas à pas : portail client, comptes de l’ARC et de Revenu Québec, allocations et plus.',
+        f'<h1>Chroniques et guides</h1><p class="lede">Les nouveautés fiscales qui vous touchent, des conseils pratiques et des marches à suivre simples pour vos démarches en ligne.</p><h2 style="margin-top:8px">Chroniques</h2><div class="gcards">{cc}</div><h2>Guides pratiques</h2><div class="gcards">{gc}</div>', '/guides/'), encoding='utf-8')
+    for c in CH:
+        body = f'<p class="crumb"><a href="/guides/">Chroniques</a> · {c["cat"]} · {c["dlong"]}</p><h1>{c["titre"]}</h1>{c["corps"]}<p class="src" style="border:0;margin-top:20px">Cette chronique est fournie à titre informatif et ne remplace pas un conseil adapté à votre situation. Information à jour au {c["dlong"]}.</p><p style="margin-top:20px"><a href="/guides/">← Toutes les chroniques</a></p>'
+        (d / f'{c["slug"]}.html').write_text(shell(c['titre'], c['resume'], body, f'/guides/{c["slug"]}.html'), encoding='utf-8')
     for g in GUIDES:
         body = f'<p class="crumb"><a href="/guides/">Guides</a> · {g["cat"]}</p><h1>{g["titre"]}</h1>{g["corps"]}<p style="margin-top:36px"><a href="/guides/">← Tous les guides</a></p>'
         (d / f'{g["slug"]}.html').write_text(shell(g['titre'], g['resume'], body, f'/guides/{g["slug"]}.html'), encoding='utf-8')

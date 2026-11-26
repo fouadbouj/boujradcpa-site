@@ -27,7 +27,7 @@ ARROW = '→'
 def page(L):
     d = T[L]; x = EXTRA[L]
     ids = ['services', 'approche' if L == 'fr' else 'approach', 'clientele' if L == 'fr' else 'clients', 'contact']
-    nav = ''.join(f'<a href="#{i}">{n}</a>' for i, n in zip(ids, d['nav'])) + ('<a href="/guides/">Guides</a>' if L == 'fr' else '<a href="/guides/" hreflang="fr">Guides (FR)</a>')
+    nav = ''.join(f'<a href="#{i}">{n}</a>' for i, n in zip(ids, d['nav'])) + ('<a href="/guides/">Chroniques</a>' if L == 'fr' else '<a href="/guides/" hreflang="fr">Insights (FR)</a>')
     heights = [22, 30, 26, 38, 34, 46, 42, 55, 50, 62, 58, 70, 66, 80, 76, 92]
     cols = ''.join(f'<i class="{"hi" if j == len(heights) - 1 else ""}" style="height:{h}%;animation-delay:{j*70}ms"></i>' for j, h in enumerate(heights))
     mq = ''.join(f'<span>{m}</span>' for m in x['mq'] * 2)
@@ -82,7 +82,7 @@ def page(L):
 </div></section></main>
 <footer><div class="wrap"><div><a class="brand" href="{d['home']}">{wordmark(24)}</a><p style="margin:12px 0 0">{', '.join(d['adr'][:2])}</p></div>
 <div><p style="margin:0;color:#fff">{d['hrT']}</p><p style="margin:4px 0 0">{d['hr'][0][0]} : {d['hr'][0][1]} · {d['hr'][1][0]} : {d['hr'][1][1]}</p></div>
-<div><p style="margin:0"><a href="/guides/">Guides</a> · <a href="{APP}/portail.html">{d['cx_pt']}</a> · <a href="{APP}">{d['members']}</a> · <a href="{d['other']}">{d['otherfull']}</a></p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc. {d['foot']}</p></div></div></footer>
+<div><p style="margin:0"><a href="/guides/">Chroniques et guides</a> · <a href="{APP}/portail.html">{d['cx_pt']}</a> · <a href="{APP}">{d['members']}</a> · <a href="{d['other']}">{d['otherfull']}</a></p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc. {d['foot']}</p></div></div></footer>
 <script>{JS}</script></body></html>'''
 
 def thanks(L):
