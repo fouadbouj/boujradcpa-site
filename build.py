@@ -27,7 +27,7 @@ ARROW = '→'
 def page(L):
     d = T[L]; x = EXTRA[L]
     ids = ['services', 'approche' if L == 'fr' else 'approach', 'clientele' if L == 'fr' else 'clients', 'contact']
-    nav = ''.join(f'<a href="#{i}">{n}</a>' for i, n in zip(ids, d['nav']))
+    nav = ''.join(f'<a href="#{i}">{n}</a>' for i, n in zip(ids, d['nav'])) + ('<a href="/guides/">Guides</a>' if L == 'fr' else '<a href="/guides/" hreflang="fr">Guides (FR)</a>')
     heights = [22, 30, 26, 38, 34, 46, 42, 55, 50, 62, 58, 70, 66, 80, 76, 92]
     cols = ''.join(f'<i class="{"hi" if j == len(heights) - 1 else ""}" style="height:{h}%;animation-delay:{j*70}ms"></i>' for j, h in enumerate(heights))
     mq = ''.join(f'<span>{m}</span>' for m in x['mq'] * 2)
@@ -82,7 +82,7 @@ def page(L):
 </div></section></main>
 <footer><div class="wrap"><div><a class="brand" href="{d['home']}">{wordmark(24)}</a><p style="margin:12px 0 0">{', '.join(d['adr'][:2])}</p></div>
 <div><p style="margin:0;color:#fff">{d['hrT']}</p><p style="margin:4px 0 0">{d['hr'][0][0]} : {d['hr'][0][1]} · {d['hr'][1][0]} : {d['hr'][1][1]}</p></div>
-<div><p style="margin:0"><a href="{APP}/portail.html">{d['cx_pt']}</a> · <a href="{APP}">{d['members']}</a> · <a href="{d['other']}">{d['otherfull']}</a></p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc. {d['foot']}</p></div></div></footer>
+<div><p style="margin:0"><a href="/guides/">Guides</a> · <a href="{APP}/portail.html">{d['cx_pt']}</a> · <a href="{APP}">{d['members']}</a> · <a href="{d['other']}">{d['otherfull']}</a></p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc. {d['foot']}</p></div></div></footer>
 <script>{JS}</script></body></html>'''
 
 def thanks(L):
@@ -101,4 +101,6 @@ for p in OUT.glob('**/*'):
 (OUT / 'en' / 'merci.html').write_text(thanks('en'), encoding='utf-8')
 (OUT / 'favicon.svg').write_text(logo(64).replace('width="64" height="64" ', ''), encoding='utf-8')
 (OUT / '_redirects').write_text('/intranet  ' + APP + '  302\n/espace-membres  ' + APP + '  302\n/members  ' + APP + '  302\n/portail  ' + APP + '/portail.html  302\n/portal  ' + APP + '/portail.html  302\n/centre  ' + APP + '/centre.html  302\n', encoding='utf-8')
+exec(open(HERE / 'guides.py', encoding='utf-8').read())
+guides(OUT, CSS, wordmark, APP)
 print('ok')
