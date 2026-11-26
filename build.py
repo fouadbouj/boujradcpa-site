@@ -24,6 +24,17 @@ CSS = open(HERE / 'site2.css', encoding='utf-8').read()
 JS = open(HERE / 'site2.js', encoding='utf-8').read()
 ARROW = '→'
 
+def header(L, pre=''):
+    d = T[L]
+    ids = ['services', 'approche' if L == 'fr' else 'approach', 'clientele' if L == 'fr' else 'clients', 'contact']
+    nav = ''.join(f'<a href="{pre}#{i}">{n}</a>' for i, n in zip(ids[:3], d['nav'][:3])) + ('<a href="/guides/">Chroniques</a>' if L == 'fr' else '<a href="/guides/" hreflang="fr">Insights (FR)</a>') + f'<a href="{pre}#{ids[3]}">{d["nav"][3]}</a>'
+    return f'''<header><div class="wrap nav"><a class="brand" href="{d['home']}">{wordmark()}</a><nav class="links" aria-label="Navigation">{nav}</nav>
+<a class="lang" href="{d['other']}" hreflang="{'en' if L == 'fr' else 'fr'}" title="{d['otherfull']}">{d['otherlbl']}</a><button class="btn mint cxb" id="cxB" aria-expanded="false" aria-controls="cxP">{d['login']}<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
+<div class="cxp" id="cxP" role="region" aria-label="{d['login']}"><div class="wrap cxg">
+<div class="cxc"><p class="cxk">{d['cx_it']}</p><p class="cxd">{d['cx_id']}</p><div class="cxl"><a href="{APP}/">{d['cx_c1']} <span>→</span></a><a href="{APP}/centre.html">{d['cx_c2']} <span>→</span></a></div></div>
+<div class="cxc cxm"><p class="cxk">{d['cx_pt']}</p><p class="cxd">{d['cx_pd']}</p><a class="btn deep" href="{APP}/portail.html">{d['cx_pb']}</a><p class="cxn">{d['cx_pn']}</p></div>
+</div></div></header>'''
+
 def page(L):
     d = T[L]; x = EXTRA[L]
     ids = ['services', 'approche' if L == 'fr' else 'approach', 'clientele' if L == 'fr' else 'clients', 'contact']
@@ -48,12 +59,7 @@ def page(L):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style>{CSS}</style></head><body>
-<header><div class="wrap nav"><a class="brand" href="{d['home']}">{wordmark()}</a><nav class="links" aria-label="Navigation">{nav}</nav>
-<a class="lang" href="{d['other']}" hreflang="{'en' if L == 'fr' else 'fr'}" title="{d['otherfull']}">{d['otherlbl']}</a><button class="btn mint cxb" id="cxB" aria-expanded="false" aria-controls="cxP">{d['login']}<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
-<div class="cxp" id="cxP" role="region" aria-label="{d['login']}"><div class="wrap cxg">
-<div class="cxc"><p class="cxk">{d['cx_it']}</p><p class="cxd">{d['cx_id']}</p><div class="cxl"><a href="{APP}/">{d['cx_c1']} <span>→</span></a><a href="{APP}/centre.html">{d['cx_c2']} <span>→</span></a></div></div>
-<div class="cxc cxm"><p class="cxk">{d['cx_pt']}</p><p class="cxd">{d['cx_pd']}</p><a class="btn deep" href="{APP}/portail.html">{d['cx_pb']}</a><p class="cxn">{d['cx_pn']}</p></div>
-</div></div></header>
+{header(L)}
 <main>
 <section class="hero"><div class="cols" aria-hidden="true">{cols}</div><div class="veil"></div>
 <div class="wrap in"><p class="pre">{x['pre']}</p><h1><span data-w='{words}'>{x['rot'][0]}</span></h1><p>{d['lead']}</p>

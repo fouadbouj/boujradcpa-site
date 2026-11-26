@@ -169,9 +169,9 @@ def guides(OUT, CSS, wordmark, APP):
 <title>{H.escape(title)} · Boujrad CPA Inc.</title><meta name="description" content="{H.escape(desc)}"><link rel="canonical" href="https://boujradcpa.com{canon}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:title" content="{H.escape(title)}"><meta property="og:description" content="{H.escape(desc)}">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><style>{CSS}{GCSS}</style></head><body>
-<header class="solid"><div class="wrap nav"><a class="brand" href="/">{wordmark()}</a><nav class="links" aria-label="Navigation"><a href="/#services">Services</a><a href="/guides/">Chroniques et guides</a><a href="/#contact">Contact</a></nav><a class="btn deep" href="{APP}/portail.html">Portail client</a></div></header>
+{header('fr','/')}
 <main class="gmain"><div class="wrap">{body}</div></main>
-<footer><div class="wrap"><div><a class="brand" href="/">{wordmark(24)}</a></div><div><p style="margin:0">Ces guides sont fournis à titre informatif. Les étapes des sites gouvernementaux peuvent changer : en cas de doute, fiez-vous aux sources officielles indiquées.</p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc.</p></div></div></footer></body></html>'''
+<footer><div class="wrap"><div><a class="brand" href="/">{wordmark(24)}</a></div><div><p style="margin:0">Ces guides sont fournis à titre informatif. Les étapes des sites gouvernementaux peuvent changer : en cas de doute, fiez-vous aux sources officielles indiquées.</p><p style="margin:4px 0 0">© 2026 Boujrad CPA Inc.</p></div></div></footer><script>{JS}</script></body></html>'''
     card = lambda g, extra='': f'<a class="gcard" href="/guides/{g["slug"]}.html"><small>{g["cat"]}{extra}</small><h2>{g["titre"]}</h2><p>{g["resume"]}</p></a>'
     CH = sorted(CHRONIQUES, key=lambda c: c['date'], reverse=True)
     cc = ''.join(card(c, ' · ' + c['dlong']) for c in CH)
