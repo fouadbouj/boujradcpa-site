@@ -53,8 +53,10 @@ def page(L):
     words = json.dumps(x['rot'], ensure_ascii=False).replace("'", '&#39;')
     return f'''<!DOCTYPE html>
 <html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{d['title']}</title><meta name="description" content="{d['desc']}">
-<link rel="alternate" hreflang="fr-CA" href="https://boujradcpa.com/"><link rel="alternate" hreflang="en-CA" href="https://boujradcpa.com/en/">
+<title>{d['title']}</title><meta name="description" content="{d['desc']}"><script>document.documentElement.classList.add('js')</script>
+<link rel="canonical" href="https://boujradcpa.com{'/' if L=='fr' else '/en/'}"><link rel="alternate" hreflang="fr-CA" href="https://boujradcpa.com/"><link rel="alternate" hreflang="en-CA" href="https://boujradcpa.com/en/"><link rel="alternate" hreflang="x-default" href="https://boujradcpa.com/">
+<meta property="og:type" content="website"><meta property="og:url" content="https://boujradcpa.com{'/' if L=='fr' else '/en/'}"><meta property="og:locale" content="{'fr_CA' if L=='fr' else 'en_CA'}"><meta property="og:site_name" content="Boujrad CPA Inc.">
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"AccountingService","name":"Boujrad CPA Inc.","url":"https://boujradcpa.com/","description":{json.dumps(d['desc'],ensure_ascii=False)},"areaServed":[{{"@type":"City","name":"Laval"}},{{"@type":"State","name":"Québec"}}],"address":{{"@type":"PostalAddress","addressLocality":"Laval","addressRegion":"QC","addressCountry":"CA"}},"knowsLanguage":["fr","en"],"logo":"https://boujradcpa.com/favicon.svg"}}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:title" content="{d['title']}"><meta property="og:description" content="{d['desc']}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -93,7 +95,7 @@ def page(L):
 
 def thanks(L):
     d = T[L]
-    return f'''<!DOCTYPE html><html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{d['thanksT']}</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    return f'''<!DOCTYPE html><html lang="{d['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{d['thanksT']}</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
 <header class="solid"><div class="wrap nav"><a class="brand" href="{d['home']}">{wordmark()}</a><a class="btn deep" href="{APP}">{d['members']}</a></div></header>
 <main class="thanks"><div class="wrap"><h1>{d['thanksT']}</h1><p style="color:#cdd6e3">{d['thanksL']}</p><p><a class="btn mint" href="{d['home']}">{d['back']}</a></p></div></main></body></html>'''
@@ -110,3 +112,9 @@ for p in OUT.glob('**/*'):
 exec(open(HERE / 'guides.py', encoding='utf-8').read())
 guides(OUT, CSS, wordmark, APP)
 print('ok')
+
+# Plan du site et robots pour les moteurs de recherche
+_pages=sorted(str(p.relative_to(OUT)).replace('\\','/') for p in OUT.glob('**/*.html') if 'merci' not in p.name)
+_urls=['https://boujradcpa.com/'+('' if x=='index.html' else x.replace('index.html','')) for x in _pages]
+(OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{u}</loc></url>\n' for u in _urls)+'</urlset>\n', encoding='utf-8')
+(OUT / 'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /merci.html\nDisallow: /en/merci.html\nSitemap: https://boujradcpa.com/sitemap.xml\n', encoding='utf-8')

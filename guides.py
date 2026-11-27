@@ -166,7 +166,7 @@ def guides(OUT, CSS, wordmark, APP):
         shutil.copy(p, d / 'img' / p.name)
     def shell(title, desc, body, canon):
         return f'''<!DOCTYPE html><html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{H.escape(title)} · Boujrad CPA Inc.</title><meta name="description" content="{H.escape(desc)}"><link rel="canonical" href="https://boujradcpa.com{canon}">
+<title>{H.escape(title)} · Boujrad CPA Inc.</title><script>document.documentElement.classList.add('js')</script><meta property="og:type" content="article"><meta property="og:site_name" content="Boujrad CPA Inc."><meta name="description" content="{H.escape(desc)}"><link rel="canonical" href="https://boujradcpa.com{canon}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:title" content="{H.escape(title)}"><meta property="og:description" content="{H.escape(desc)}">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><style>{CSS}{GCSS}</style></head><body>
 {header('fr','/')}

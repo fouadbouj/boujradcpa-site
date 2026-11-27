@@ -125,3 +125,4 @@ footer .brand{color:#fff}
 .cxm{background:var(--soft);border-radius:14px;padding:22px}
 @media(max-width:760px){.cxg{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.cxp,.cxb svg{transition:none}}
+@media (max-width:640px){.hero{min-height:auto}.hero .in{padding-top:120px;padding-bottom:56px}}
