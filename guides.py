@@ -24,30 +24,51 @@ APPURL = 'https://app.boujradcpa.com'
 
 GUIDES = [
  dict(slug='portail-client', cat='Notre plateforme', titre='Utiliser le portail client de Boujrad CPA',
-  resume='Créer votre compte, envoyer vos documents d’impôt, suivre votre entreprise et payer vos acomptes et vos taxes.',
+  resume='Créer votre compte, nous transmettre vos documents, signer, payer et suivre votre dossier, au même endroit.',
   corps=f'''
-<p class="lede">Le portail client est l’endroit sécurisé pour nous transmettre vos renseignements et vos documents. Rien ne passe par courriel : vos pièces sont chiffrées et conservées au Canada.</p>
-<h2>Créer votre compte</h2><ol class="gsteps">
-{step('Ouvrez le portail', f'<p>Allez à <a href="{APPURL}/portail.html">app.boujradcpa.com/portail.html</a>, ou cliquez sur <em>Connexion</em> puis <em>Portail client</em> en haut de notre site.</p>')}
+<p class="lede">Le portail client est votre espace sécurisé avec Boujrad CPA : vous y déposez vos documents, remplissez nos questionnaires, signez vos documents, consultez ce qui est à payer et nous écrivez. Rien ne passe par courriel : vos pièces sont chiffrées et conservées au Canada.</p>
+<div class="need"><strong>En un coup d’œil</strong><ul><li><a href="#compte">Créer votre compte</a></li><li><a href="#impots">Impôts personnels</a></li><li><a href="#entreprise">Espace Entreprise</a></li><li><a href="#signer">Signer un document</a></li><li><a href="#factures">Payer une facture du cabinet</a></li><li><a href="#questionnaires">Questionnaires de service</a></li><li><a href="#representant">Nous autoriser comme représentant</a></li></ul></div>
+
+<h2 id="compte">Créer votre compte</h2><ol class="gsteps">
+{step('Ouvrez le portail', f'<p>Allez à <a href="{APPURL}/portail.html">app.boujradcpa.com/portail.html</a>, ou cliquez sur <em>Connexion</em>, puis <em>Portail client</em>, en haut de notre site. Si nous vous avons envoyé un lien d’invitation, utilisez-le : votre entreprise sera ajoutée automatiquement.</p>')}
 {step('Cliquez sur « Créer un compte »', '<p>Inscrivez votre nom, votre courriel et un mot de passe d’au moins 8 caractères.</p>', 'portail-1-compte.png', 'Formulaire de création de compte du portail')}
-{step('Confirmez votre courriel', '<p>Ouvrez le courriel de confirmation et cliquez sur le lien. Vous pouvez ensuite vous connecter en tout temps.</p>')}
+{step('Confirmez votre courriel', '<p>Ouvrez le courriel de confirmation et cliquez sur le lien. Vous pouvez ensuite vous connecter en tout temps, à partir d’un ordinateur, d’une tablette ou d’un téléphone.</p>')}
 </ol>
-<div class="tip"><strong>Mot de passe oublié?</strong> Entrez votre courriel sur la page de connexion, puis cliquez sur « Mot de passe oublié? » : un lien de réinitialisation vous est envoyé.</div>
-<h2>Impôts personnels : votre déclaration en trois étapes</h2><ol class="gsteps">
-{step('Choisissez l’année et votre situation', '<p><em>Nouveau client</em> si c’est votre première année avec nous, <em>Client existant</em> si nous avons déjà préparé votre déclaration : vous indiquez alors seulement ce qui a changé.</p>', 'portail-2-accueil.png', 'Choix nouveau client ou client existant')}
-{step('Remplissez le formulaire', '<p>Les champs marqués d’un astérisque sont requis. Si vous faites votre déclaration avec votre conjoint, ses renseignements sont dans le même formulaire : il n’a pas besoin de compte.</p>', 'portail-3-formulaire.png', 'Formulaire des impôts personnels')}
-{step('Déposez tous vos documents en une seule fois', '<p>La liste des documents à prévoir s’adapte à vos réponses. Glissez vos fichiers (PDF ou photos) dans la zone de dépôt, puis envoyez votre dossier.</p>')}
+<div class="tip"><strong>Mot de passe oublié?</strong> Sur la page de connexion, entrez votre courriel et cliquez sur « Mot de passe oublié? » : un lien de réinitialisation vous est envoyé.</div>
+
+<h2 id="impots">Impôts personnels : votre déclaration en trois étapes</h2><ol class="gsteps">
+{step('Choisissez l’année et votre situation', '<p><em>Nouveau client</em> si c’est votre première année avec nous; <em>Client existant</em> si nous avons déjà préparé votre déclaration : vous indiquez alors seulement ce qui a changé.</p>', 'portail-2-accueil.png', 'Accueil du portail : choix de la situation')}
+{step('Remplissez le formulaire', '<p>Les champs marqués d’un astérisque sont requis. Si nous préparons aussi la déclaration de votre conjoint, ses renseignements sont dans le même formulaire : il n’a pas besoin de compte. Vos réponses sont enregistrées au fur et à mesure.</p>', 'portail-3-formulaire.png', 'Formulaire de renseignements')}
+{step('Déposez tous vos documents en une seule fois', '<p>La liste des documents à prévoir s’adapte à vos réponses. Attendez d’avoir <strong>tous</strong> vos feuillets et reçus, puis glissez-les tous ensemble dans la zone de dépôt (PDF ou photos) et envoyez votre dossier.</p>', 'portail-3b-documents.png', 'Étape des documents, avec la consigne de tout déposer en une seule fois')}
 </ol>
-<h2>Espace Entreprise</h2><ol class="gsteps">
-{step('Entrez votre code d’invitation', '<p>Nous vous remettons un code pour chaque entreprise. Onglet <em>Entreprise</em>, entrez le code, puis cliquez sur <em>Accéder</em>. Vous pouvez ajouter plusieurs entreprises au même compte.</p>', 'portail-4-code.png', 'Saisie du code d’invitation')}
-{step('Consultez ce qui est à payer', '<p>Quand nous préparons une déclaration de taxes ou d’impôt, vous recevez un courriel. Le montant, la date limite et le code de paiement sont dans <em>À payer et documents du cabinet</em>. Une fois le paiement fait à votre institution financière, cliquez sur <em>J’ai fait le paiement</em> : nous sommes avisés.</p>', 'portail-5-payer.png', 'Documents à payer dans l’espace Entreprise')}
-{step('Déposez vos documents de la période', '<p>Onglet <em>Déposer des documents</em> : choisissez la période (relevés bancaires, factures), déposez tout, puis cliquez sur <em>J’ai terminé</em>.</p>', 'portail-6-depot.png', 'Dépôt de documents par période')}
-{step('Factures, échéancier et messages', '<p>Retrouvez vos factures, les prochaines dates limites de votre entreprise, et écrivez-nous dans <em>Messages</em> (avec pièces jointes au besoin).</p>')}
+<div class="tip"><strong>Important : tout en une seule fois.</strong> Nous préparons votre déclaration directement à partir des documents déposés, dès leur réception. Ne les envoyez pas au fur et à mesure : s’il vous manque un feuillet, gardez vos documents et revenez lorsque vous aurez tout en main. Cela évite les oublis et les retards.</div>
+
+<h2 id="entreprise">Espace Entreprise</h2><ol class="gsteps">
+{step('Ajoutez votre entreprise', '<p>Onglet <em>Entreprise</em> : entrez le code d’invitation que nous vous avons remis, puis cliquez sur <em>Accéder</em>. Vous pouvez ajouter plusieurs entreprises au même compte (bouton <em>Ajouter une autre entreprise</em>).</p>', 'portail-4-code.png', 'Ajout d’une entreprise avec le code d’invitation')}
+{step('Consultez ce qui est à payer', '<p>Quand nous préparons une déclaration de taxes ou d’impôt, vous recevez un courriel. Le montant, la date limite et le code de paiement sont dans <em>À payer et documents du cabinet</em>. Le paiement se fait auprès du gouvernement; une fois fait, cliquez sur <em>J’ai fait le paiement</em> pour nous en informer.</p>', 'portail-5-payer.png', 'Montants à payer et documents du cabinet')}
+{step('Déposez les documents de la période, tous en une seule fois', '<p>Onglet <em>Déposer des documents</em> : choisissez la période, déposez <strong>tous</strong> les relevés bancaires et de cartes, factures de ventes et d’achats, puis cliquez sur <em>J’ai terminé</em>. Nous préparons vos déclarations directement à partir de ce dépôt : s’il manque quelque chose, attendez d’avoir tout.</p>', 'portail-6-depot.png', 'Dépôt de documents de la période')}
+{step('Factures, échéancier et messages', '<p><em>Factures</em> : vos factures du cabinet et leur état. <em>Échéancier</em> : les prochaines dates limites de votre entreprise (taxes, retenues, impôt). <em>Messages</em> : écrivez-nous, avec pièces jointes au besoin; nous vous répondons au même endroit.</p>')}
 </ol>
-<h2>Questionnaires de service</h2>
-<p>Pour certains mandats (constitution d’une société, allocations pour enfants, pensions de retraite, succession, etc.), nous vous envoyons un lien vers un questionnaire. Il s’ouvre dans votre portail : répondez aux questions et déposez chaque pièce demandée à l’endroit prévu. Vos réponses sont enregistrées au fur et à mesure; cliquez sur <em>Envoyer au cabinet</em> quand tout est complet.</p>
-<img class="shot" src="img/portail-7-questionnaire.png" alt="Questionnaire de constitution de société" loading="lazy" width="1100">
-<div class="tip"><strong>Sécurité.</strong> Ne nous envoyez jamais de numéro d’assurance sociale ni de documents d’identité par courriel. Utilisez toujours le portail.</div>
+
+<h2 id="signer">Signer un document</h2>
+<p>Votre contrat de services, une procuration de Revenu Québec (formulaire MR-69) ou tout autre document à signer vous attend dans <em>À payer et documents du cabinet</em>, avec la mention <em>Document à signer</em>. Vous recevez aussi un courriel.</p><ol class="gsteps">
+{step('Cliquez sur « Lire et signer »', '<p>Le document s’affiche. Lisez-le au complet.</p>', 'portail-8-a-signer.png', 'Document à signer dans le portail')}
+{step('Cliquez à l’endroit où signer, puis signez', '<p>Cliquez sur la case de signature du document, inscrivez votre nom (et votre titre si vous signez pour une entreprise), signez avec la souris ou le doigt, puis cochez la case de consentement.</p>', 'portail-8b-signature.png', 'Signature électronique du document')}
+{step('Cliquez sur « Signer le document »', '<p>C’est fait : nous sommes avisés, et votre copie signée est disponible en tout temps dans votre portail (bouton <em>Copie signée</em>).</p>')}
+</ol>
+
+<h2 id="factures">Payer une facture du cabinet</h2>
+<p>Si vous n’êtes pas prélevé par débit préautorisé, vous recevez nos factures par courriel, avec un lien vers une page de paiement sécurisée. Vous pouvez y payer par virement Interac (les instructions y sont indiquées) ou, lorsque l’option est offerte, par carte de crédit. Vos factures sont aussi dans l’onglet <em>Factures</em> du portail.</p>
+
+<h2 id="questionnaires">Questionnaires de service</h2>
+<p>Pour certains mandats (ouverture de dossier, constitution d’une société, fin d’exercice, allocations pour enfants, pensions de retraite, succession, etc.), nous vous envoyons un lien vers un questionnaire. Il s’ouvre dans votre portail : répondez aux questions et déposez chaque pièce demandée au bon endroit. Vos réponses sont enregistrées automatiquement; vous pouvez revenir terminer plus tard, puis cliquez sur <em>Envoyer au cabinet</em>.</p>
+<img class="shot" src="img/portail-7-questionnaire.png" alt="Questionnaire de service dans le portail" loading="lazy" width="1100">
+
+<h2 id="representant">Nous autoriser comme représentant</h2>
+<p>Pour que nous puissions parler à l’ARC et à Revenu Québec en votre nom, la carte <em>Nous autoriser comme représentant</em> du portail vous explique quoi faire. Le plus souvent, nous faisons la demande à l’ARC et vous n’avez qu’à la confirmer dans votre compte; pour Revenu Québec, nous vous faisons signer la procuration dans le portail. Toutes les étapes sont dans le guide <a href="autoriser-representant.html">Autoriser Boujrad CPA comme représentant</a>.</p>
+<img class="shot" src="img/portail-9-representant.png" alt="Carte Nous autoriser comme représentant" loading="lazy" width="1100">
+
+<div class="tip"><strong>Sécurité.</strong> Ne nous envoyez jamais de numéro d’assurance sociale, de pièce d’identité ni de document fiscal par courriel : utilisez toujours le portail. Nous ne vous demanderons jamais votre mot de passe.</div>
 <p style="margin-top:28px"><a class="btn deep" href="{APPURL}/portail.html">Aller au portail client</a></p>'''),
 
  dict(slug='compte-arc', cat='Gouvernement du Canada', titre='Créer votre compte de l’ARC (Mon dossier)',
