@@ -65,9 +65,35 @@ GUIDES = [
 </ol>
 <div class="tip"><strong>Vous avez déménagé?</strong> Le code de sécurité est envoyé à l’adresse que l’ARC a dans votre dossier. Faites d’abord corriger votre adresse, sinon le code ira à l’ancienne.</div>
 <h2>Nous autoriser comme représentant</h2>
-<p>Une fois inscrit, vous pouvez autoriser Boujrad CPA Inc. à consulter votre dossier : nous pourrons alors répondre à l’ARC pour vous et récupérer vos feuillets. Dans Mon dossier, allez au menu <em>Profil</em>, choisissez l’option pour autoriser un représentant, puis entrez le numéro que nous vous fournirons. Écrivez-nous dans le portail pour l’obtenir.</p>
+<p>Une fois inscrit, vous pouvez autoriser Boujrad CPA Inc. à consulter votre dossier : nous pourrons alors répondre à l’ARC pour vous et récupérer vos feuillets. Toutes les étapes, pour un particulier comme pour une entreprise, sont dans le guide <a href="autoriser-representant.html">Autoriser Boujrad CPA comme représentant</a>. Notre identifiant vous est donné dans votre portail client.</p>
 <div class="src"><strong>Sources officielles</strong> · <a href="https://www.canada.ca/fr/agence-revenu/services/services-electroniques/services-ouverture-session-arc.html" rel="noopener">Se connecter à son compte de l’ARC</a> · <a href="https://www.canada.ca/fr/agence-revenu/services/services-electroniques/services-ouverture-session-arc/aide-services-ouverture-session-arc/verification-identite.html" rel="noopener">Vérification de votre identité</a> · <a href="https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/programmes-educatifs/utiliser-mon-dossier.html" rel="noopener">Leçon de l’ARC : utiliser Mon dossier</a></div>'''),
 
+ dict(slug='autoriser-representant', cat='Gouvernement du Canada et du Québec', titre='Autoriser Boujrad CPA comme représentant (ARC et Revenu Québec)',
+  resume='Nous donner accès à votre dossier fiscal pour que nous puissions répondre aux gouvernements et récupérer vos feuillets à votre place.',
+  corps='''
+<p class="lede">Pour parler à l’Agence du revenu du Canada (ARC) et à Revenu Québec en votre nom, récupérer vos feuillets et répondre à leurs lettres, nous devons être autorisés comme représentant. Côté fédéral, c’est vous qui le faites, en quelques minutes, dans votre compte de l’ARC. Côté Québec, c’est nous qui préparons la procuration et vous la faisons signer.</p>
+<div class="need"><strong>À avoir sous la main</strong><ul><li>Votre accès à votre compte de l’ARC (<em>Mon dossier</em> pour un particulier, <em>Mon dossier d’entreprise</em> pour une société). Pas encore inscrit? Voyez le guide <a href="compte-arc.html">Créer votre compte de l’ARC</a>.</li><li>Notre identifiant de représentant : nous vous le donnons dans votre <strong>portail client</strong> (section « Nous autoriser comme représentant ») ou sur simple demande dans le portail. Pour votre sécurité, il n’est pas publié sur ce site.</li></ul></div>
+<h2>ARC : vous êtes un particulier</h2><ol class="gsteps">
+<li><b>Connectez-vous à Mon dossier</b><p>Dans votre compte de l’ARC, choisissez <em>Mon dossier</em>.</p></li>
+<li><b>Allez à la gestion des représentants</b><p>Dans le menu <em>Profil</em>, choisissez l’option pour autoriser ou gérer vos représentants, puis <em>Autoriser un représentant</em>.</p></li>
+<li><b>Entrez notre identifiant</b><p>Saisissez l’identifiant que nous vous avons transmis (numéro d’entreprise du cabinet, ID Rep ou ID Groupe), puis vérifiez que c’est bien « Boujrad CPA Inc. » qui s’affiche.</p></li>
+<li><b>Choisissez le niveau d’accès</b><p>Choisissez le niveau 2 (voir et mettre à jour les renseignements) : c’est ce qui nous permet de répondre à l’ARC et de faire des corrections pour vous. Indiquez une date de fin si vous le souhaitez.</p></li>
+<li><b>Confirmez</b><p>L’accès est immédiat. Écrivez-nous dans le portail pour nous dire que c’est fait.</p></li>
+</ol>
+<h2>ARC : vous avez une entreprise (société, entreprise inscrite)</h2><ol class="gsteps">
+<li><b>Connectez-vous à Mon dossier d’entreprise</b><p>Seul un propriétaire, un administrateur ou un représentant déjà autorisé au niveau 3 peut donner l’accès.</p></li>
+<li><b>Ouvrez « Autoriser ou gérer les représentants »</b><p>Puis choisissez <em>Autoriser un représentant</em>.</p></li>
+<li><b>Entrez notre identifiant</b><p>Le même que ci-dessus. Vérifiez le nom du cabinet affiché.</p></li>
+<li><b>Choisissez le niveau et la portée</b><p>Niveau 2, et la portée <em>numéro d’entreprise au complet</em> pour que nous puissions vous aider en impôt des sociétés (RC), en TPS/TVH (RT) et en retenues sur la paie (RP). Vous pouvez limiter à certains comptes si vous préférez.</p></li>
+<li><b>Confirmez</b><p>Prévenez-nous dans le portail une fois terminé.</p></li>
+</ol>
+<div class="tip"><strong>Une autre façon :</strong> nous pouvons aussi envoyer nous-mêmes une demande d’autorisation par le service <em>Représenter un client</em>. Vous recevez alors une demande « en attente » dans votre compte de l’ARC : il vous reste seulement à la <strong>confirmer</strong>. Dites-nous quelle méthode vous préférez.</div>
+<h2>Revenu Québec : la procuration</h2>
+<p>Au Québec, c’est nous qui préparons l’autorisation : le formulaire <em>Autorisation relative à la communication de renseignements ou procuration</em> (MR-69), dans sa version la plus récente, que vous signez, ou une demande que nous transmettons en ligne. Vous pouvez aussi nous l’accorder vous-même dans Mon dossier pour les citoyens ou Mon dossier pour les entreprises, si vous préférez. Une procuration nous permet d’agir pour vous (répondre aux demandes, faire des corrections); une simple autorisation nous permet seulement de consulter vos renseignements.</p>
+<h2>Retirer l’accès</h2>
+<p>Vous restez en contrôle : vous pouvez en tout temps mettre fin à notre accès dans votre compte de l’ARC (gestion des représentants) et dans Mon dossier de Revenu Québec, ou avec le formulaire de révocation MR-69.R.</p>
+<div class="src"><strong>Sources officielles</strong> · <a href="https://www.canada.ca/fr/agence-revenu/services/impot/autorisation-representant/comment.html" rel="noopener">ARC — Comment donner une autorisation</a> · <a href="https://www.canada.ca/fr/agence-revenu/services/impot/autorisation-representant/acces/niveaux-portee.html" rel="noopener">ARC — Niveaux et portée de l’autorisation</a> · <a href="https://www.revenuquebec.ca/fr/citoyens/votre-situation/autorisation-ou-procuration/" rel="noopener">Revenu Québec — Autorisation ou procuration</a> · <a href="https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/details-courant/mr-69/" rel="noopener">Formulaire MR-69</a></div>
+'''),
  dict(slug='mon-dossier-revenu-quebec', cat='Gouvernement du Québec', titre='Accéder à Mon dossier de Revenu Québec',
   resume='Voir vos avis de cotisation du Québec, vos relevés et vos remboursements, et faire vos démarches en ligne.',
   corps='''
