@@ -73,6 +73,13 @@ GUIDES = [
   corps='''
 <p class="lede">Pour parler à l’Agence du revenu du Canada (ARC) et à Revenu Québec en votre nom, récupérer vos feuillets et répondre à leurs lettres, nous devons être autorisés comme représentant. Côté fédéral, c’est vous qui le faites, en quelques minutes, dans votre compte de l’ARC. Côté Québec, c’est nous qui préparons la procuration et vous la faisons signer.</p>
 <div class="need"><strong>À avoir sous la main</strong><ul><li>Votre accès à votre compte de l’ARC (<em>Mon dossier</em> pour un particulier, <em>Mon dossier d’entreprise</em> pour une société). Pas encore inscrit? Voyez le guide <a href="compte-arc.html">Créer votre compte de l’ARC</a>.</li><li>Notre identifiant de représentant : nous vous le donnons dans votre <strong>portail client</strong> (section « Nous autoriser comme représentant ») ou sur simple demande dans le portail. Pour votre sécurité, il n’est pas publié sur ce site.</li></ul></div>
+<h2>Le plus simple : confirmer notre demande</h2>
+<p>Dans la plupart des cas, c’est nous qui faisons la demande d’autorisation à l’ARC. Vous n’avez qu’à la confirmer :</p><ol class="gsteps">
+<li><b>Connectez-vous à votre compte de l’ARC</b><p><em>Mon dossier</em> si vous êtes un particulier, <em>Mon dossier d’entreprise</em> pour une société.</p></li>
+<li><b>Ouvrez la demande en attente</b><p>Une demande d’autorisation en attente de « Boujrad CPA Inc. » s’affiche. Sinon, cherchez la section des représentants autorisés : elle y est en attente.</p></li>
+<li><b>Vérifiez et confirmez</b><p>Niveau 2, aucune date de fin, accès en ligne (et, pour une entreprise, le numéro d’entreprise au complet). Cliquez sur <em>Confirmer</em>. C’est tout.</p></li>
+</ol>
+<p>Pas de demande visible, ou vous préférez le faire vous-même? Suivez les étapes ci-dessous.</p>
 <h2>ARC : vous êtes un particulier</h2><ol class="gsteps">
 <li><b>Connectez-vous à Mon dossier</b><p>Dans votre compte de l’ARC, choisissez <em>Mon dossier</em>.</p></li>
 <li><b>Allez à la gestion des représentants</b><p>Dans le menu <em>Profil</em>, choisissez l’option pour autoriser ou gérer vos représentants, puis <em>Autoriser un représentant</em>.</p></li>
@@ -88,7 +95,7 @@ GUIDES = [
 <li><b>Confirmez</b><p>Prévenez-nous dans le portail une fois terminé.</p></li>
 </ol>
 <div class="tip"><strong>Pourquoi ces options?</strong> Sans date de fin, vous n’avez pas à refaire l’autorisation chaque année; le niveau 2 et l’accès en ligne nous permettent de corriger une déclaration, de répondre à une demande de l’ARC et de mettre votre dossier à jour sans délai. Vous pouvez retirer l’accès en tout temps.</div>
-<div class="tip"><strong>Une autre façon :</strong> nous pouvons aussi envoyer nous-mêmes une demande d’autorisation par le service <em>Représenter un client</em>. Vous recevez alors une demande « en attente » dans votre compte de l’ARC : il vous reste seulement à la <strong>confirmer</strong>. Dites-nous quelle méthode vous préférez.</div>
+
 <h2>Revenu Québec : la procuration</h2>
 <p>Au Québec, c’est nous qui préparons l’autorisation : le formulaire <em>Autorisation relative à la communication de renseignements ou procuration</em> (MR-69), dans sa version la plus récente, que vous signez, ou une demande que nous transmettons en ligne. Vous pouvez aussi nous l’accorder vous-même dans Mon dossier pour les citoyens ou Mon dossier pour les entreprises, si vous préférez. Une procuration nous permet d’agir pour vous (répondre aux demandes, faire des corrections); une simple autorisation nous permet seulement de consulter vos renseignements.</p>
 <h2>Retirer l’accès</h2>
