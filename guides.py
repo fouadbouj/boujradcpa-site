@@ -77,16 +77,17 @@ GUIDES = [
 <li><b>Connectez-vous à Mon dossier</b><p>Dans votre compte de l’ARC, choisissez <em>Mon dossier</em>.</p></li>
 <li><b>Allez à la gestion des représentants</b><p>Dans le menu <em>Profil</em>, choisissez l’option pour autoriser ou gérer vos représentants, puis <em>Autoriser un représentant</em>.</p></li>
 <li><b>Entrez notre identifiant</b><p>Saisissez l’identifiant que nous vous avons transmis (numéro d’entreprise du cabinet, ID Rep ou ID Groupe), puis vérifiez que c’est bien « Boujrad CPA Inc. » qui s’affiche.</p></li>
-<li><b>Choisissez le niveau d’accès</b><p>Choisissez le niveau 2 (voir et mettre à jour les renseignements) : c’est ce qui nous permet de répondre à l’ARC et de faire des corrections pour vous. Indiquez une date de fin si vous le souhaitez.</p></li>
+<li><b>Choisissez exactement ces options</b><p><strong>Niveau 2</strong> (voir et mettre à jour les renseignements), <strong>aucune date de fin</strong> (laissez le champ vide : l’autorisation reste valide sans limite) et l’<strong>accès en ligne</strong>. C’est ce qui nous permet de répondre à l’ARC et de faire toutes les corrections pour vous.</p></li>
 <li><b>Confirmez</b><p>L’accès est immédiat. Écrivez-nous dans le portail pour nous dire que c’est fait.</p></li>
 </ol>
 <h2>ARC : vous avez une entreprise (société, entreprise inscrite)</h2><ol class="gsteps">
 <li><b>Connectez-vous à Mon dossier d’entreprise</b><p>Seul un propriétaire, un administrateur ou un représentant déjà autorisé au niveau 3 peut donner l’accès.</p></li>
 <li><b>Ouvrez « Autoriser ou gérer les représentants »</b><p>Puis choisissez <em>Autoriser un représentant</em>.</p></li>
 <li><b>Entrez notre identifiant</b><p>Le même que ci-dessus. Vérifiez le nom du cabinet affiché.</p></li>
-<li><b>Choisissez le niveau et la portée</b><p>Niveau 2, et la portée <em>numéro d’entreprise au complet</em> pour que nous puissions vous aider en impôt des sociétés (RC), en TPS/TVH (RT) et en retenues sur la paie (RP). Vous pouvez limiter à certains comptes si vous préférez.</p></li>
+<li><b>Choisissez exactement ces options</b><p><strong>Niveau 2</strong>, la portée <strong>numéro d’entreprise au complet</strong> (impôt des sociétés RC, TPS/TVH RT, retenues sur la paie RP et tous les autres comptes), <strong>aucune date de fin</strong> (sans limite) et l’<strong>accès en ligne</strong>. Ainsi, nous pouvons faire toutes les démarches et modifications pour vous.</p></li>
 <li><b>Confirmez</b><p>Prévenez-nous dans le portail une fois terminé.</p></li>
 </ol>
+<div class="tip"><strong>Pourquoi ces options?</strong> Sans date de fin, vous n’avez pas à refaire l’autorisation chaque année; le niveau 2 et l’accès en ligne nous permettent de corriger une déclaration, de répondre à une demande de l’ARC et de mettre votre dossier à jour sans délai. Vous pouvez retirer l’accès en tout temps.</div>
 <div class="tip"><strong>Une autre façon :</strong> nous pouvons aussi envoyer nous-mêmes une demande d’autorisation par le service <em>Représenter un client</em>. Vous recevez alors une demande « en attente » dans votre compte de l’ARC : il vous reste seulement à la <strong>confirmer</strong>. Dites-nous quelle méthode vous préférez.</div>
 <h2>Revenu Québec : la procuration</h2>
 <p>Au Québec, c’est nous qui préparons l’autorisation : le formulaire <em>Autorisation relative à la communication de renseignements ou procuration</em> (MR-69), dans sa version la plus récente, que vous signez, ou une demande que nous transmettons en ligne. Vous pouvez aussi nous l’accorder vous-même dans Mon dossier pour les citoyens ou Mon dossier pour les entreprises, si vous préférez. Une procuration nous permet d’agir pour vous (répondre aux demandes, faire des corrections); une simple autorisation nous permet seulement de consulter vos renseignements.</p>
